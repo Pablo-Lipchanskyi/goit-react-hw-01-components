@@ -1,5 +1,5 @@
 
-const UserProfileComponent = ({
+const Profile = ({
     username,
     tag,
     location,
@@ -36,4 +36,4 @@ const UserProfileComponent = ({
 </div>
     )
 }
-export default UserProfileComponent
+export default Profile
