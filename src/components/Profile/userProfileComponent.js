@@ -1,4 +1,4 @@
-
+import css from "./profileStyle.module.css"
 const Profile = ({
     username,
     tag,
@@ -7,30 +7,30 @@ const Profile = ({
     stats
 }) => {
     return (
-        <div class="profile">
-  <div class="description">
+      <div className={css.profile}>
+  <div className="description">
     <img
       src={avatar}
       alt="User avatar"
-      class="avatar"
+      className={css.avatar}
     />
-    <p class="name">{username}</p>
-    <p class="tag">@{tag}</p>
-    <p class="location">{location}</p>
+    <p className={css.name}>{username}</p>
+    <p className={css.tag}>@{tag}</p>
+    <p className={css.location}>{location}</p>
   </div>
 
-  <ul class="stats">
-    <li>
-        <span class="label">{stats.followers}</span>
-        <span class="quantity">1000</span>
+        <ul className={css.stats}>
+    <li className={css.statsUnit}>
+        <span className="label">Followers</span>
+        <span className="quantity">{stats.followers}</span>
     </li>
-    <li>
-        <span class="label">{stats.views}</span>
-        <span class="quantity">2000</span>
+    <li className={css.statsUnit}>
+        <span className="label">Views</span>
+        <span className="quantity">{stats.views}</span>
     </li>
-    <li>
-        <span class="label">{stats.likes}</span>
-        <span class="quantity">3000</span>
+    <li className={css.statsUnit}>
+        <span className="label">Likes</span>
+        <span className="quantity">{stats.likes}</span>
     </li>
   </ul>
 </div>

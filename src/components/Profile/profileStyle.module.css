@@ -1,0 +1,36 @@
+.profile{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    border: 3px solid tomato;
+}
+.avatar{
+    width: 50%;
+    border-radius: 50%;
+}
+.name{
+    font-weight: bold;
+    font-size: large;
+}
+.tag{
+    font-weight: lighter;
+    color: gray;
+}
+.location{
+    color: gray;
+}
+.stats{
+    display:flex;
+    
+}
+.statsUnit{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
